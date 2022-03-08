@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de las letras</title>
+    <script src="juegoletras.js"></script>
+    <script src="diccionario.js"></script>
+    <link rel="stylesheet" href="juegoletras.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="font-weight-bold">Juego de las letras</h1>
+        <div>
+            <h2 class="font-weight-bold">Como se juega</h2>
+            <p>Pulsa los botones hasta tener entre 4 y 9 letras e intenta adivinar las palabras posibles antes de buscar la solución</p>
+        </div>
+        <button class="btn btn-success" id="bvocal">Vocal</button>
+        <button class="btn btn-success" id="bconsonante">Consonante</button>
+        <br>
+        <input class="my-4" type="text" id="texto" maxlength="9" value="" readonly>
+        <br>
+        <button class="btn btn-success" id="bbuscar">Buscar soluciones</button>
+        <button class="btn btn-success" id="reiniciar">Reiniciar</button>
+
+        <div id="listapalabras" class="m-3">
+            <p class="font-weight-bold d-inline">De 9 letras: </p><span id="p9"> </span><br>
+            <p class="font-weight-bold d-inline">De 8 letras: </p><span id="p8"> </span><br>
+            <p class="font-weight-bold d-inline">De 7 letras: </p><span id="p7"> </span><br>
+            <p class="font-weight-bold d-inline">De 6 letras: </p><span id="p6"> </span><br>
+            <p class="font-weight-bold d-inline">De 5 letras: </p><span id="p5"> </span><br>
+            <p class="font-weight-bold d-inline">De 4 letras: </p><span id="p4"> </span><br>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    </div>
+</body>
+</html>

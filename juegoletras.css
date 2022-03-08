@@ -1,0 +1,19 @@
+#contenedor{
+    border: 1px solid black;
+    width: 60%;
+    margin:auto;
+    text-align: center;
+}
+
+input{
+    border: 2px solid #09a0048c;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#listapalabras{
+    visibility: hidden;
+}
